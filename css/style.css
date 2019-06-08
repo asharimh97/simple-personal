@@ -150,4 +150,43 @@ html, body {
   text-decoration: none;
   text-transform: uppercase; }
 
+/*
+* Blog section
+*/
+#posts .post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px; }
+#posts .post-content a {
+  text-decoration: none; }
+  #posts .post-content a:hover .post-title {
+    color: #fd4f5d; }
+#posts .post-content .post-img {
+  border: none;
+  outline: none;
+  width: 100%; }
+#posts .post-content .post-date {
+  color: #d4d6d7;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.115em;
+  text-transform: uppercase; }
+#posts .post-content .post-title {
+  color: #343a40;
+  font-size: 22px;
+  margin: 0;
+  min-height: 56px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; }
+#posts .post-content .post-description {
+  color: #a8adaf;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 1.75em;
+  margin: 8px 0; }
+
 /*# sourceMappingURL=style.css.map */
