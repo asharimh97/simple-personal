@@ -7,6 +7,8 @@
 // variables
 $white: #fff;
 $darkGrey: #333;
+$charcoal: #343a40;
+$softGrey: #a8adaf;
 $watermelon: #fd4f5d;
 
 // mixins
@@ -186,6 +188,7 @@ html, body {
     }
 
     p {
+      color: $softGrey;
       font-size: 14px;
       letter-spacing: 0.05em;
       line-height: 1.65em;

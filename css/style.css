@@ -134,6 +134,7 @@ html, body {
     #about .about-content h1 span {
       color: #fd4f5d; }
   #about .about-content p {
+    color: #a8adaf;
     font-size: 14px;
     letter-spacing: 0.05em;
     line-height: 1.65em;
