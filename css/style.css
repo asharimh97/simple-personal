@@ -14,13 +14,40 @@ html, body {
   padding: 0;
   top: 0; }
 
+.container {
+  margin: auto;
+  max-width: 1080px; }
+
+.container-flex {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  max-width: 1080px;
+  width: 100%; }
+
+.content-section {
+  padding: 48px 0; }
+
 /*
 * Header
 */
+#header {
+  background: url("../images/trees.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%; }
+
 #navbar {
-  background: #333;
+  background: none;
   padding: 16px 0;
   width: 100%; }
+  #navbar .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; }
+  #navbar .logo img {
+    height: 40px; }
   #navbar #navbar-nav {
     display: flex;
     justify-content: center;
@@ -54,18 +81,72 @@ html, body {
 
 #header-hero {
   align-items: center;
-  background-image: url("../images/trees.jpg");
   color: #fff;
   display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
-  text-align: center;
   width: 100%; }
+  #header-hero .container {
+    width: 1080px; }
+  #header-hero h2 {
+    font-size: 32px;
+    margin-bottom: 16px; }
+    #header-hero h2 small {
+      display: block;
+      font-size: 16px;
+      font-weight: 400; }
+  #header-hero .hero-subtitle {
+    letter-spacing: 0.055em;
+    line-height: 1.75em;
+    margin-bottom: 48px;
+    max-width: 600px; }
+  #header-hero .btn-more {
+    border: solid 2px #fff;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 18px; }
 
-.divider {
-  background: #fff;
-  width: 250px;
-  height: 1px; }
+/*
+* About section
+*/
+#about .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px; }
+#about .about-img {
+  width: 450px; }
+#about .about-content {
+  max-width: 450px; }
+  #about .about-content h3.about-title {
+    color: #343a40;
+    font-size: 16px;
+    letter-spacing: 0.175em;
+    line-height: 29px;
+    margin: 0;
+    text-transform: uppercase; }
+  #about .about-content h1 {
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase; }
+    #about .about-content h1 span {
+      color: #fd4f5d; }
+  #about .about-content p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1.65em;
+    margin-bottom: 40px; }
+#about .btn-more {
+  background-color: #fd4f5d;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 13px 30px;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

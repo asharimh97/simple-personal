@@ -7,6 +7,7 @@
 // variables
 $white: #fff;
 $darkGrey: #333;
+$watermelon: #fd4f5d;
 
 // mixins
 
@@ -30,13 +31,47 @@ html, body {
   top: 0;
 }
 
+.container {
+  margin: auto;
+  max-width: 1080px;
+}
+
+.container-flex {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  max-width: 1080px;
+  width: 100%;
+}
+
+.content-section {
+  padding: 48px 0;
+}
+
 /*
 * Header
 */
+#header {
+  background: url("../images/trees.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
 #navbar {
-  background: $darkGrey;
+  background: none;
   padding: 16px 0 ;
   width: 100%;
+
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 40px;
+  }
 
   #navbar-nav {
     display: flex;
@@ -76,18 +111,96 @@ html, body {
 
 #header-hero {
   align-items: center;
-  background-image: url("../images/trees.jpg");
   color: $white;
   display: flex;
-  flex-direction: column;
   height: 400px;
-  justify-content: center;
-  text-align: center;
   width: 100%;
+
+  .container {
+    width: 1080px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+
+    small {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .hero-subtitle {
+    letter-spacing: 0.055em;
+    line-height: 1.75em;
+    margin-bottom: 48px;
+    max-width: 600px;
+  }
+
+  .btn-more {
+    border: solid 2px $white;
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 18px;
+  }
 }
 
-.divider {
-  background: $white;
-  width: 250px;
-  height: 1px;
+/*
+* About section
+*/
+#about {
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+
+  .about-img {
+    width: 450px;
+  }
+  .about-content {
+    max-width: 450px;
+
+    h3.about-title {
+      color: #343a40;
+      font-size: 16px;
+      letter-spacing: 0.175em;
+      line-height: 29px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+      text-transform: uppercase;
+
+      span {
+        color: $watermelon;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      line-height: 1.65em;
+      margin-bottom: 40px;
+    }
+  }
+  .btn-more {
+    background-color: $watermelon;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 13px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }

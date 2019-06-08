@@ -13,40 +13,70 @@
 <body>
   <header id="header">
     <nav id="navbar">
-      <ul id="navbar-nav">
-        <li>
-          <a href="#header">Home</a>
-        </li>
-        <li>
-          <a href="#header">Blog</a>
-        </li>
-        <li>
-          <a href="#header">Artwork</a>
-        </li>
-        <li>
-          <a href="#header">About</a>
-        </li>
-        <li>
-          <a href="#header">Contact</a>
-        </li>
-      </ul>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="Personal Website logo" />
+        </a>
+        <ul id="navbar-nav">
+          <li>
+            <a href="#header">Home</a>
+          </li>
+          <li>
+            <a href="#header">Blog</a>
+          </li>
+          <li>
+            <a href="#header">Artwork</a>
+          </li>
+          <li>
+            <a href="#header">About</a>
+          </li>
+          <li>
+            <a href="#header">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     
     <section id="header-hero">
-      <h2 class="hero-title">Lorem Ipsum</h2>
-      <div class="divider"></div>
-      <p class="hero-subtitle">Personal Blog</p>
+      <div class="container">
+        <h2 class="hero-title">
+          <small>Hi, I am</small>
+          Lorem Ipsum dolorsit amet
+        </h2>
+        <p class="hero-subtitle">
+          Aliquam et posuere ligula. Maecenas pharetra urna in eleifend 
+          commodo. Quisque suscipit quam et pharetra maximus. Etiam 
+          molestie neque eget ex sodales malesuada.
+        </p>
+        <a href="#content" class="btn-more">
+          Know More
+        </a>
+      </div>
     </section>
   </header>
   <main id="content">
-    <section id="posts">
+    <section id="about" class="content-section">
+      <div class="container">
+        <img src="./images/about-me.jpg" class="about-img" alt="About author" />
+        <div class="about-content">
+          <h3 class="about-title">About me</h3>
+          <h1>Lorem <span>Ipsum</span> dolorsit amet</h1>
+          <p>
+            Aenean eget mi vestibulum, eleifend orci quis, venenatis urna. 
+            Nullam bibendum pulvinar mauris, id imperdiet erat rhoncus vitae. 
+            Duis accumsan orci vitae nulla malesuada egestas. Donec fringilla urna 
+            dapibus accumsan molestie. Interdum et malesuada fames ac ante ipsum 
+            primis in faucibus. 
+          </p>
+          <a href="#posts" class="btn-more">My portfolios</a>
+        </div>
+      </div>
+    </section>
+    <section id="posts" class="content-section">
       ini posts
     </section>
-    <section id="gallery">
+    <section id="gallery" class="content-section">
       gallery
-    </section>
-    <section id="about">
-      ini about
     </section>
   </main>
   <footer id="footer">
