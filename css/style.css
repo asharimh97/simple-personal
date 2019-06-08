@@ -189,4 +189,15 @@ html, body {
   line-height: 1.75em;
   margin: 8px 0; }
 
+/*
+* Gallery
+*/
+#gallery .gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px; }
+#gallery .gallery-content {
+  cursor: pointer;
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */

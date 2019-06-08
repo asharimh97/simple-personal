@@ -265,3 +265,20 @@ html, body {
     }
   }
 }
+
+/*
+* Gallery
+*/
+
+#gallery {
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+
+  .gallery-content {
+    cursor: pointer;
+    width: 100%;
+  }
+}
