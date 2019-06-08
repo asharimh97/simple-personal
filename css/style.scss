@@ -1,0 +1,93 @@
+/*
+* Personal web styles
+* Made by Ashari Muhammad Hisbulloh
+* 08 June 2019
+*/
+
+// variables
+$white: #fff;
+$darkGrey: #333;
+
+// mixins
+
+@mixin transition($duration) {
+  transition: all $duration*1s ease;
+  -webkit-transition: all $duration*1s ease;
+  -moz-transition: all $duration*1s ease;
+  -o-transition: all $duration*1s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: $white;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+/*
+* Header
+*/
+#navbar {
+  background: $darkGrey;
+  padding: 16px 0 ;
+  width: 100%;
+
+  #navbar-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: $white;
+      font-size: 14px;
+      margin: 0 16px;
+      position: relative;
+      text-decoration: none;
+      @include transition(0.3);
+
+      &:after {
+        content: "";
+        background: $white;
+        bottom: -6px;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 0;
+        @include transition(0.3);
+      }
+
+      &:hover {
+
+        &:after {
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+#header-hero {
+  align-items: center;
+  background-image: url("../images/trees.jpg");
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.divider {
+  background: $white;
+  width: 250px;
+  height: 1px;
+}
