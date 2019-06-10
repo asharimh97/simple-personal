@@ -243,7 +243,7 @@ html, body {
     #contact .form-group .input-form::placeholder {
       color: rgba(255, 255, 255, 0.5); }
   #contact .form-group textarea.input-form {
-    height: 122px; }
+    height: 126px; }
   #contact .form-group .btn-contact-submit {
     background: #fd4f5d;
     border: none;
