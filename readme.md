@@ -21,4 +21,5 @@ To edit css styling, you just have to edit in `style.scss`.
 --
 
 Best regards,
+
 Ashari Muhammad Hisbulloh
